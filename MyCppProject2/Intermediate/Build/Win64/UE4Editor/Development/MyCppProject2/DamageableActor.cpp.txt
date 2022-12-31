@@ -1,0 +1,3 @@
+C:\Projects\Gamedev\MyCppProject2\Intermediate\Build\Win64\UE4Editor\Development\MyCppProject2\Definitions.MyCppProject2.h
+C:\Projects\Gamedev\MyCppProject2\Source\MyCppProject2\DamageableActor.h
+C:\Projects\Gamedev\MyCppProject2\Intermediate\Build\Win64\UE4Editor\Inc\MyCppProject2\DamageableActor.generated.h

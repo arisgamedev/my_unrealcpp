@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\Projects\\Gamedev\\MyCppProject2\\Source\\MyCppProject2\\MyCppProject2.Build.cs",
+		"C:\\Projects\\Gamedev\\MyCppProject2\\Source\\MyCppProject2.Target.cs",
+		"C:\\Projects\\Gamedev\\MyCppProject2\\Source\\MyCppProject2Editor.Target.cs"
+	],
+	"EngineVersion": "4.27.2"
+}
