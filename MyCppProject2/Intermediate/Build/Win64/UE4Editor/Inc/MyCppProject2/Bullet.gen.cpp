@@ -241,10 +241,8 @@ void EmptyLinkFunctionForGeneratedCodeBullet() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABullet_Statics::NewProp_CollisionSphere_MetaData[] = {
 		{ "Category", "Bullet" },
-		{ "Comment", "// hay que agregar el include en la class antes de poder agregar la variable del componente aqu?\n" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Bullet.h" },
-		{ "ToolTip", "hay que agregar el include en la class antes de poder agregar la variable del componente aqu?" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABullet_Statics::NewProp_CollisionSphere = { "CollisionSphere", nullptr, (EPropertyFlags)0x00100000000a000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABullet, CollisionSphere), Z_Construct_UClass_USphereComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABullet_Statics::NewProp_CollisionSphere_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABullet_Statics::NewProp_CollisionSphere_MetaData)) };
@@ -295,7 +293,7 @@ void EmptyLinkFunctionForGeneratedCodeBullet() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABullet, 3229848039);
+	IMPLEMENT_CLASS(ABullet, 3081134586);
 	template<> MYCPPPROJECT2_API UClass* StaticClass<ABullet>()
 	{
 		return ABullet::StaticClass();

@@ -27,11 +27,11 @@ void ATriggerTimer::DoTimedFunction()
 {
 	if (bIsInTrigger == true)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 3.f, FColor::Cyan, "Delayed message DENTRO DEL TRIGGER!!!");
+		GEngine->AddOnScreenDebugMessage(-1, 3.f, FColor::Cyan, "Delayed message: STILL INSIDE TRIGGER!!!");
 	}
 	else
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 3.f, FColor::Cyan, "Delayed message FUERA DEL TRIGGER!!!");
+		GEngine->AddOnScreenDebugMessage(-1, 3.f, FColor::Cyan, "Delayed message OUTSIDE TRIGGER!!!");
 	}
 	GetWorldTimerManager().ClearTimer(TriggerTimerHandle);
 }
@@ -52,14 +52,14 @@ void ATriggerTimer::Tick(float DeltaTime)
 
 void ATriggerTimer::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	GEngine->AddOnScreenDebugMessage(-1, 3.f, FColor::Cyan, "Entra al trigger");
+	GEngine->AddOnScreenDebugMessage(-1, 3.f, FColor::Cyan, "Enter trigger");
 	bIsInTrigger = true;
 	GetWorld()->GetTimerManager().SetTimer(TriggerTimerHandle, this, &ATriggerTimer::DoTimedFunction, 3.0f, false);
 }
 
 void ATriggerTimer::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	GEngine->AddOnScreenDebugMessage(-1, 3.f, FColor::Cyan, "Sale del trigger");
+	GEngine->AddOnScreenDebugMessage(-1, 3.f, FColor::Cyan, "Exit trigger");
 	bIsInTrigger = false;
 }
 

@@ -17,13 +17,12 @@ ABullet::ABullet()
 
 
 
-
-	CollisionSphere = CreateDefaultSubobject<USphereComponent>(TEXT("SphereCollision"));
-	//CollisionSphere->SetupAttachment(RootComponent);
+	// must add the "include" for the component before adding the component
+	CollisionSphere = CreateDefaultSubobject<USphereComponent>(TEXT("SphereCollision"));	
 	CollisionSphere->SetSphereRadius(25.f);
 	CollisionSphere->SetCollisionProfileName("Trigger");
 
-	RootComponent = CollisionSphere;
+	RootComponent = CollisionSphere; //setting the sphere as root component
 
 	CollisionSphere->OnComponentBeginOverlap.AddDynamic(this, &ABullet::OnOverlapBegin);
 	CollisionSphere->OnComponentEndOverlap.AddDynamic(this, &ABullet::OnOverlapEnd);
@@ -56,19 +55,20 @@ void ABullet::Tick(float DeltaTime)
 
 void ABullet::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	GEngine->AddOnScreenDebugMessage(-1, 3.f, FColor::Cyan, "Entra al trigger");
+	GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Cyan, "enters object");
 
 	//ADamageableActor* OtherActor = Cast<ADamageableActor>(OtherActor);
 	if (ADamageableActor* DamageableActorCheck = Cast<ADamageableActor>(OtherActor)) //if con casting para ver si el OtherActor es la bala
 	{
 		FString ObjName = OtherActor->GetName();
-		UE_LOG(LogTemp, Warning, TEXT("Instant Shot %s"), *ObjName);
+		//UE_LOG(LogTemp, Warning, TEXT("Instant Shot %s"), *ObjName);
+		GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Cyan, FString::Printf(TEXT("enters damageable object %s"), *ObjName));
 		DamageableActorCheck->MyTakeDamage(damage);
 	}
 }
 
 void ABullet::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	GEngine->AddOnScreenDebugMessage(-1, 3.f, FColor::Cyan, "Sale del trigger");
+	GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Cyan, "exits object");
 }
 

@@ -14,9 +14,9 @@ class MYCPPPROJECT2_API ABullet : public AActor
 public:
 	// Sets default values for this actor's properties
 	ABullet();
-	// hay que agregar el include en la class antes de poder agregar la variable del componente aquí
 
 
+	
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 		class USphereComponent* CollisionSphere;
 

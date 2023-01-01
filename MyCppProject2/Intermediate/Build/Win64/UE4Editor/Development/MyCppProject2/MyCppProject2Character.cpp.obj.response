@@ -231,8 +231,8 @@
 /I Editor\Kismet\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ClothingSystemRuntimeInterface
 /I Runtime\ClothingSystemRuntimeInterface\Public
-/I C:\Projects\Gamedev\MyCppProject2\Intermediate\Build\Win64\UE4Editor\Inc\MyCppProject2
-/I C:\Projects\Gamedev\MyCppProject2\Source
+/I C:\Projects\Gamedev\_research\my_unrealcpp\MyCppProject2\Intermediate\Build\Win64\UE4Editor\Inc\MyCppProject2
+/I C:\Projects\Gamedev\_research\my_unrealcpp\MyCppProject2\Source
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\AugmentedReality
 /I Runtime\AugmentedReality\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\MRMesh
@@ -266,12 +266,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
-/FI"C:\Projects\Gamedev\MyCppProject2\Intermediate\Build\Win64\MyCppProject2Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Yu"C:\Projects\Gamedev\MyCppProject2\Intermediate\Build\Win64\MyCppProject2Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"C:\Projects\Gamedev\MyCppProject2\Intermediate\Build\Win64\MyCppProject2Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"C:\Projects\Gamedev\MyCppProject2\Source\MyCppProject2\MyCppProject2Character.cpp"
-/FI"C:\Projects\Gamedev\MyCppProject2\Intermediate\Build\Win64\UE4Editor\Development\MyCppProject2\Definitions.MyCppProject2.h"
-/Fo"C:\Projects\Gamedev\MyCppProject2\Intermediate\Build\Win64\UE4Editor\Development\MyCppProject2\MyCppProject2Character.cpp.obj"
+/FI"C:\Projects\Gamedev\_research\my_unrealcpp\MyCppProject2\Intermediate\Build\Win64\MyCppProject2Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Yu"C:\Projects\Gamedev\_research\my_unrealcpp\MyCppProject2\Intermediate\Build\Win64\MyCppProject2Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"C:\Projects\Gamedev\_research\my_unrealcpp\MyCppProject2\Intermediate\Build\Win64\MyCppProject2Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+"C:\Projects\Gamedev\_research\my_unrealcpp\MyCppProject2\Source\MyCppProject2\MyCppProject2Character.cpp"
+/FI"C:\Projects\Gamedev\_research\my_unrealcpp\MyCppProject2\Intermediate\Build\Win64\UE4Editor\Development\MyCppProject2\Definitions.MyCppProject2.h"
+/Fo"C:\Projects\Gamedev\_research\my_unrealcpp\MyCppProject2\Intermediate\Build\Win64\UE4Editor\Development\MyCppProject2\MyCppProject2Character.cpp.obj"
 /TP
 /GR-
 /W4

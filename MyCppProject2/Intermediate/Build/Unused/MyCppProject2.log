@@ -1,11 +1,12 @@
-﻿  Building MyCppProject2Editor...
+﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Projects\Gamedev\_research\my_unrealcpp).
+  Deleted hot-reload file: C:\Projects\Gamedev\_research\my_unrealcpp\MyCppProject2\Intermediate\Build\Win64\UE4Editor\Development\MyCppProject2\UE4Editor-MyCppProject2-1977.lib
+  Building MyCppProject2Editor...
   Using Visual Studio 2019 14.29.30146 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 4 actions with 12 processes...
-    [1/4] MyCppProject2Character.cpp
-    [2/4] UE4Editor-MyCppProject2-0003.lib
-       Creating library C:\Projects\Gamedev\MyCppProject2\Intermediate\Build\Win64\UE4Editor\Development\MyCppProject2\UE4Editor-MyCppProject2-0003.lib and object C:\Projects\Gamedev\MyCppProject2\Intermediate\Build\Win64\UE4Editor\Development\MyCppProject2\UE4Editor-MyCppProject2-0003.exp
-    [3/4] UE4Editor-MyCppProject2-0003.dll
-       Creating library C:\Projects\Gamedev\MyCppProject2\Intermediate\Build\Win64\UE4Editor\Development\MyCppProject2\UE4Editor-MyCppProject2-0003.suppressed.lib and object C:\Projects\Gamedev\MyCppProject2\Intermediate\Build\Win64\UE4Editor\Development\MyCppProject2\UE4Editor-MyCppProject2-0003.suppressed.exp
-    [4/4] MyCppProject2Editor.target
-  Total time in Parallel executor: 1.95 seconds
-  Total execution time: 2.62 seconds
+  Building 3 actions with 12 processes...
+    [1/3] UE4Editor-MyCppProject2.lib
+       Creating library C:\Projects\Gamedev\_research\my_unrealcpp\MyCppProject2\Intermediate\Build\Win64\UE4Editor\Development\MyCppProject2\UE4Editor-MyCppProject2.lib and object C:\Projects\Gamedev\_research\my_unrealcpp\MyCppProject2\Intermediate\Build\Win64\UE4Editor\Development\MyCppProject2\UE4Editor-MyCppProject2.exp
+    [2/3] UE4Editor-MyCppProject2.dll
+       Creating library C:\Projects\Gamedev\_research\my_unrealcpp\MyCppProject2\Intermediate\Build\Win64\UE4Editor\Development\MyCppProject2\UE4Editor-MyCppProject2.suppressed.lib and object C:\Projects\Gamedev\_research\my_unrealcpp\MyCppProject2\Intermediate\Build\Win64\UE4Editor\Development\MyCppProject2\UE4Editor-MyCppProject2.suppressed.exp
+    [3/3] MyCppProject2Editor.target
+  Total time in Parallel executor: 0.92 seconds
+  Total execution time: 1.55 seconds

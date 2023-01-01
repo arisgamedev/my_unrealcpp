@@ -116,12 +116,14 @@ void AMyCppProject2Character::Tick(float DeltaTime)
 }
 
 
-
+//implementing a server shoot, so when clients shoot, the server performs the actual shoot
 void AMyCppProject2Character::ServerShoot_Implementation()
 {
 	Shoot();
 }
 
+
+//implementing a server shoot, so when clients shoot, the server performs the actual shoot
 void AMyCppProject2Character::ServerInstantShoot_Implementation()
 {
 	TraceShoot();
@@ -129,12 +131,12 @@ void AMyCppProject2Character::ServerInstantShoot_Implementation()
 
 void AMyCppProject2Character::Shoot()
 {
-	if (GetLocalRole() < ROLE_Authority) //chequea si tu rol es inferior al ROLE_Authority, que es el server, y es para que el server haga el shooting en el caso de multiplayer
+	if (GetLocalRole() < ROLE_Authority) //checks if the shooter role is inferior to ROLE_Authority, which is the server (so shooter would be a client). If shooter is a client, tell the server to shoot
 	{
 		ServerShoot();
 		return;
 	}
-	//SE TIENE QUE AGREGAR EL INCLUDE CON EL HEADER BULLET.H PARA QUE FUNCIONE PORQUE SE ESTA LLAMANDO AL BULLET!!!
+	//FOR SPAWN TO WORK MUST ADD THE INCLUDE WITH BULLET.H!!!
 	FTransform SpawnTransform = GetActorTransform();
 	SpawnTransform.TransformPosition(FVector(0.f, 0.f, 100.f));
 	FActorSpawnParameters SpawnParams;
@@ -166,7 +168,7 @@ FHitResult AMyCppProject2Character::InstantShoot()
 
 void AMyCppProject2Character::TraceShoot()
 {
-	if (GetLocalRole() < ROLE_Authority) //chequea si tu rol es inferior al ROLE_Authority, que es el server, y es para que el server haga el shooting en el caso de multiplayer
+	if (GetLocalRole() < ROLE_Authority) //checks if the shooter role is inferior to ROLE_Authority, which is the server (so shooter would be a client). If shooter is a client, tell the server to shoot
 	{
 		ServerInstantShoot();
 		return;
@@ -215,9 +217,10 @@ void AMyCppProject2Character::SphereTrace()
 {
 	const FVector PlayerPos = Player->GetActorLocation();
 	const FVector Forward = Player->GetActorForwardVector()*75.f;
-	const FVector Start = PlayerPos + Forward;
-	const FVector Offset = FVector(0.f, 0.f, 50.f) ;
-	const FVector End = Start + Offset;
+	const FVector TraceOffset = FVector(0.f, 0.f, 150.f);
+	const FVector TraceDistance = FVector(0.f, 0.f, -170.f);
+	const FVector Start = PlayerPos + Forward + TraceOffset;	
+	const FVector End = Start + TraceDistance;
 
 	TArray<AActor*> ActorsToIgnore;
 
@@ -230,8 +233,14 @@ void AMyCppProject2Character::SphereTrace()
 	if (Hit == true)
 	{
 		for (const FHitResult HitResult : HitArray)
-		{			
-			GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Cyan, FString::Printf(TEXT("Hit: %s"), *HitResult.Actor->GetName()));
+		{	
+			const FVector ImpactPoint = HitResult.ImpactPoint;
+			const float ImpactX = ImpactPoint.X;
+			const float ImpactY = ImpactPoint.Y;
+			const float ImpactZ = ImpactPoint.Z;
+			const float Distance = HitResult.Distance;
+			GEngine->AddOnScreenDebugMessage(-1, 0.01f, FColor::Cyan, FString::Printf(TEXT("Hit object: %s | Impact distance: %f | Impact point: %f %f %f"), *HitResult.Actor->GetName(), Distance, ImpactX, ImpactY, ImpactZ));
+
 		}
 			 
 	}

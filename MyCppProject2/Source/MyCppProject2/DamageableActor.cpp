@@ -35,11 +35,13 @@ void ADamageableActor::MyTakeDamage(float damage)
 	if (Health <= 0)
 	{
 		BpOnDestroyObj();
+		GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Cyan, "Destroy actor");
 		UE_LOG(LogTemp, Warning, TEXT("Destroy actor"));
 	}
 	else if (Health > 0)
 	{
 		BpOnTakeDamage();
+		GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Cyan, "Actor is taking damage");
 		UE_LOG(LogTemp, Warning, TEXT("Actor is taking damage"));
 	}
 }

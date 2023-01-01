@@ -1,2 +1,2 @@
-C:\Projects\Gamedev\MyCppProject2\Intermediate\Build\Win64\UE4Editor\Development\MyCppProject2\Definitions.MyCppProject2.h
-C:\Projects\Gamedev\MyCppProject2\Source\MyCppProject2\MyCppProject2.h
+C:\Projects\Gamedev\_research\my_unrealcpp\MyCppProject2\Intermediate\Build\Win64\UE4Editor\Development\MyCppProject2\Definitions.MyCppProject2.h
+C:\Projects\Gamedev\_research\my_unrealcpp\MyCppProject2\Source\MyCppProject2\MyCppProject2.h

@@ -101,7 +101,7 @@ public:
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 
 	UPROPERTY(EditAnywhere, Category = "Trace")
-		float TraceRadius{ 500.f };
+		float TraceRadius{ 10.f };
 
 
 

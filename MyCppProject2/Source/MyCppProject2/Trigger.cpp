@@ -36,11 +36,11 @@ void ATrigger::Tick(float DeltaTime)
 
 void ATrigger::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	GEngine->AddOnScreenDebugMessage(-1, 3.f, FColor::Cyan, "Entra al trigger");
+	GEngine->AddOnScreenDebugMessage(-1, 3.f, FColor::Cyan, "Enters trigger");
 }
 
 void ATrigger::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	GEngine->AddOnScreenDebugMessage(-1, 3.f, FColor::Cyan, "Sale del trigger");
+	GEngine->AddOnScreenDebugMessage(-1, 3.f, FColor::Cyan, "Exits trigger");
 }
 

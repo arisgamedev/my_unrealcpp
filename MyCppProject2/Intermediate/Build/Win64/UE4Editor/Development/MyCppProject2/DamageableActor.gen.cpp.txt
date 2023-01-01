@@ -1,5 +1,5 @@
-C:\Projects\Gamedev\MyCppProject2\Intermediate\Build\Win64\UE4Editor\Development\MyCppProject2\Definitions.MyCppProject2.h
+C:\Projects\Gamedev\_research\my_unrealcpp\MyCppProject2\Intermediate\Build\Win64\UE4Editor\Development\MyCppProject2\Definitions.MyCppProject2.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-C:\Projects\Gamedev\MyCppProject2\Source\MyCppProject2/DamageableActor.h
-C:\Projects\Gamedev\MyCppProject2\Intermediate\Build\Win64\UE4Editor\Inc\MyCppProject2\DamageableActor.generated.h
+C:\Projects\Gamedev\_research\my_unrealcpp\MyCppProject2\Source\MyCppProject2/DamageableActor.h
+C:\Projects\Gamedev\_research\my_unrealcpp\MyCppProject2\Intermediate\Build\Win64\UE4Editor\Inc\MyCppProject2\DamageableActor.generated.h

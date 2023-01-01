@@ -260,11 +260,11 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
-/I C:\Projects\Gamedev\MyCppProject2\Intermediate\Build\Win64\MyCppProject2Editor\Development\Engine
-/Yc"C:\Projects\Gamedev\MyCppProject2\Intermediate\Build\Win64\MyCppProject2Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"C:\Projects\Gamedev\MyCppProject2\Intermediate\Build\Win64\MyCppProject2Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"C:\Projects\Gamedev\MyCppProject2\Intermediate\Build\Win64\MyCppProject2Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.cpp"
-/Fo"C:\Projects\Gamedev\MyCppProject2\Intermediate\Build\Win64\MyCppProject2Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+/I C:\Projects\Gamedev\_research\my_unrealcpp\MyCppProject2\Intermediate\Build\Win64\MyCppProject2Editor\Development\Engine
+/Yc"C:\Projects\Gamedev\_research\my_unrealcpp\MyCppProject2\Intermediate\Build\Win64\MyCppProject2Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"C:\Projects\Gamedev\_research\my_unrealcpp\MyCppProject2\Intermediate\Build\Win64\MyCppProject2Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+"C:\Projects\Gamedev\_research\my_unrealcpp\MyCppProject2\Intermediate\Build\Win64\MyCppProject2Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.cpp"
+/Fo"C:\Projects\Gamedev\_research\my_unrealcpp\MyCppProject2\Intermediate\Build\Win64\MyCppProject2Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
 /TP
 /GR-
 /W4
